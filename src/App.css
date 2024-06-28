@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    font-family: "Noto Sans" ;
+    font-weight: 100;
+}
+.titie{
+    color: white;
+}
+body{
+    background-color: #0e131b;
+}
+.nav-link-list{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link-list a{
+    text-decoration: none;
+    color: rgb(194, 191, 191);
+    transition: all .400;
+}
+.nav-link-list a:hover{
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+
+
+/* PROFILE  */
+.profile{
+    width: 100%;
+    height: 100vh;
+    background-color: #121b29;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background: url("./img/03.jpg") ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-text{
+    color: white;
+}
+.profile-text h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.profile-text h6{
+    color: rgb(190, 188, 188);
+    font-size: 17px;
+}
+.profile-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid blue;
+    overflow: hidden;
+}
+.btn-cv-con{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.btn-cv{
+    padding: 7px 20px;
+    border: none;
+    background-color: rgb(57, 29, 160);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+    transition: all ease .500ms;
+}
+.btn-cv:hover{
+    background-color: rgb(65, 26, 206);
+}
+
+.about{
+    width: 100%;
+    /* background-color: aqua; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about h3{
+    margin-top: 50px;
+    color: white
+}
+.about h6{
+    margin-top: 20px;
+    line-height: 27px;
+    color: rgb(190, 188, 188);
+    width: 900px;
+    text-align: center;
+}
+
+/* stack */
+.tecnologyes{
+    width: 100%;
+    height: 60vh;
+    /* background-color: #011e4d; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+}
+.tec-con{
+    width: 900px;
+    /* height: 60px; */
+    background-color: #011e4d;
+    padding: 30px 40px;
+    margin-top: 30px;
+    border-radius: 5px;
+    /* border: 1px solid grey; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skils{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 5px;
+}
+.skils-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skils-item p{
+    margin-top: 5px;
+    color: #011e4d;
+    font-weight: bolder;
+    transition: all ease .500ms;
+}
+.skils-item:hover p{
+    color: white;
+}
+/* social */
+.social-section{
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+.social-con{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto; 
+}
+.contactos{
+    color: white;
+}
+.contactos h6{
+    color: rgb(190, 188, 188);
+    font-size: 16px;
+}
+.contactos svg{
+    font-size: 25px;
+}
+.social-links-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.social-links{
+    width: 130px;
+    display: inline-flex;
+}
+.social-links div{
+    margin-left: 10px;
+}
+.social-links div{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #121b29;
+    justify-content: center;
+    border-radius: 50%;
+    transform: all .600ms;
+}
+.social-links a svg{
+    color:  white;
+    font-size: 20px;
+    transform: all .600ms;
+}
+.social-links div:hover{
+    background-color:   #468df8;
+}
+/* .social-links div:hover a svg{
+    color:  #468df8;
+} */
+/* RESPONSIVE */
+@media(max-width: 950px){
+    .profile{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .profile-text{
+        width: 500px;
+        padding-left: 30px;
+    }
+    .profile-text h1{
+        font-size: 3.5rem;
+        font-weight: bolder;
+    }
+    .profile-img{
+        width: 220px;
+        height: 220px;
+        margin-top: 50px;
+    }
+    .profile-img img{
+        width: 220px;
+        height: 220px;
+    }
+    .about h6{
+        width: 600px;
+    }
+    .tec-con, .social-con, .footer-line{
+        width: 600px;
+    }
+}
+
+footer div{
+    border-bottom: 1px solid rgb(65, 63, 63);
+    width: 900px;
+    margin: auto;
+}
+footer p{
+    margin-top: 10px;
+    color: rgb(190, 188, 188);
+    font-weight: bolder;
+    text-align: center;
+}
+
+@media(max-width: 650px){
+    .profile{
+        width: 100%;
+    }
+    .profile-text{
+        width: 90%;
+        overflow: hidden;
+        padding-left: 1px;
+    }
+    .profile-text h1{
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .profile-text h6{
+        font-size: 15px;
+    }
+    .profile-social-list a svg{
+        font-size: 23px;
+    }
+    .about h6{
+        width: 330px;
+    }
+    .tec-con{
+        width: 330px;
+        padding: 10px 10px;
+    }
+    .tec-con, .footer-line, .social-con{
+        width: 330px;
+    }
+    
+}
+@media(max-width: 400px){
+    .profile-img{
+        width: 180px;
+        height: 180px;
+    }
+    .profile-img img{
+        width: 180px;
+        height: 180px;
+    }
+    .profile-text{
+        align-self: center;
+        position: relative;
+        overflow: visible;
+        bottom: 40px;
+    }
+    .about h6{
+        width: 260px;
+    }
+    .btn-cv-con{
+        position: relative;
+        right: 20px;
+    }
+    .profile-text h5{
+        font-size: 15px;
+    }
+    .profile-text h1{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .tec-con{
+        width: 260px;
+        padding: 20px 20px;
+    }
+    .skils-item img{
+        width: 27px;
+        height: 27px;
+    }
+    .skils{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        margin-right: 10px;
+        padding-top: 10px;
+        grid-gap: 14px 10px;
+    }
+    .skils-item p{
+        display: none;
+    }
+    .social-con{
+        flex-direction: column;
+    }
+    .footer-line, .social-con{
+        width: 260px;
+    }
+    .contactos h6, .about h6{
+        font-size: 14px;
+    }
+    .contactos svg{
+        font-size: 20px;
+    }
+    .social-links div{
+        width: 40px;
+        height: 40px;
+    }
+    
+}
