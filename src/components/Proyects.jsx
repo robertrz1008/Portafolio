@@ -2,6 +2,7 @@ import React from 'react'
 import hotelSys from "../img/proyects/hotel.jpeg"
 import chat from "../img/proyects/chat.jpeg"
 import climaImg from "../img/proyects/clima.jpeg"
+import gymSys from "../img/proyects/gym-sys.jpeg"
 import "../css/projects.css"
 
 function Proyects() {
@@ -50,10 +51,33 @@ function Proyects() {
                     <div className='line'></div>
                     <div className='btn-con'>
                         <div className='bnt-link'>
-                            <a href="https://github.com/robertrz1008/hotel-desktop" target='_blank'>Codigo</a>
+                            <a href="https://github.com/robertrz1008/faciChat" target='_blank'>Codigo</a>
                         </div>
                     </div>
                     
+                </div>
+            </div>
+
+            <div className='proyects-con'>
+                <div className='proyect-img-con pro-chat'>
+                    <img src={gymSys} alt="" />
+                </div>
+                <div className='proyect-detail'>
+                    <h4>Sistema de gimnasios</h4>
+                    <p>
+                        Un sistema web para la gestion de membresias, control de stock, reporte y estadistica de ingresos, movimmientos y más. 
+                    </p>
+                    <div className='project-stacks'>
+                        <span>express</span>
+                        <span>react</span>
+                        <span>postgresql</span>
+                    </div>
+                    <div className='line'></div>
+                    <div className='btn-con'>
+                        <div className='bnt-link'>
+                            <a href="https://github.com/robertrz1008/gym-system" target='_blank'>Codigo</a>
+                        </div>
+                    </div>      
                 </div>
             </div>
 
@@ -74,11 +98,13 @@ function Proyects() {
                     <div className='line'></div>
                     <div className='btn-con'>
                         <div className='bnt-link'>
-                            <a href="https://github.com/robertrz1008/hotel-desktop" target='_blank'>Codigo</a>
+                            <a href="https://github.com/robertrz1008/App-Clima" target='_blank'>Codigo</a>
                         </div>
                     </div>      
                 </div>
             </div>
+
+           
         </div>
     </section>
   )
